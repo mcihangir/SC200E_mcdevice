@@ -1,0 +1,13 @@
+diff --git a/QSSI.12/system/core/rootdir/init.rc b/QSSI.12/system/core/rootdir/init.rc
+index 2b74b3e..65e9dd9 100644
+--- a/QSSI.12/system/core/rootdir/init.rc
++++ b/QSSI.12/system/core/rootdir/init.rc
+@@ -10,6 +10,8 @@ import /init.${ro.hardware}.rc
+ import /vendor/etc/init/hw/init.${ro.hardware}.rc
+ import /system/etc/init/hw/init.usb.configfs.rc
+ import /system/etc/init/hw/init.${ro.zygote}.rc
++import /system/etc/init/mcdevice.rc
++
+ 
+ # Cgroups are mounted right before early-init using list from /etc/cgroups.json
+ on early-init

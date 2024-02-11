@@ -1,0 +1,7 @@
+service mchello /system/bin/mchello
+	class default 
+	user system
+	group system
+
+on boot
+	start mchello

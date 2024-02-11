@@ -1,0 +1,15 @@
+diff --git a/QSSI.12/device/qcom/qssi/qssi.mk b/QSSI.12/device/qcom/qssi/qssi.mk
+index 1f7a8f6..193c1e3 100644
+--- a/QSSI.12/device/qcom/qssi/qssi.mk
++++ b/QSSI.12/device/qcom/qssi/qssi.mk
+@@ -301,3 +301,9 @@ endif
+ ###################################################################################
+ $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/system/*.mk)
+ ###################################################################################
++
++
++###################################################################################
++# qcom/qssi customized model for mcdevice
++###################################################################################
++include device/mcdevice/mcdevice.mk
+\ No newline at end of file
