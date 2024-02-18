@@ -1,0 +1,25 @@
+
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+cc_library_shared {
+    name: "libndkdemonativelib",
+    srcs: [ "src/main/cpp/src/*.cpp" ],
+    export_include_dirs: ["lib"],
+    header_libs: [ "jni_headers" ],
+    shared_libs: [ 
+        "liblog",
+    ],
+    cppflags: [
+        "-std=c++17",
+    ],
+    cflags: [
+        "-Wall",
+        //"-Werror",
+        "-Wno-unused-parameter",
+        "-Wno-unused-variable",
+    ],
+    stl: "libc++",
+    //allow_undefined_symbols: true,
+}

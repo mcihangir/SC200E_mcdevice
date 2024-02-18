@@ -1,0 +1,30 @@
+
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+android_app {
+    name: "com.example.ndkdemo",
+	srcs: ["src/**/*.java"],
+    resource_dirs: ["src/main/res"],
+    manifest: "src/main/AndroidManifest.xml",
+    static_libs: [
+        "androidx.lifecycle_lifecycle-extensions",
+        "androidx.appcompat_appcompat",
+        "com.google.android.material_material",
+		"androidx-constraintlayout_constraintlayout",
+    ],
+    platform_apis: true,    
+    certificate: "platform",
+	min_sdk_version: "31",  // Minimum SDK sürümünü belirtin
+    //privileged: true,
+
+    // JNI kütüphanesini eklemek için jni_libs özelliği
+    jni_libs: ["libndkdemonativelib"],
+    // JNI kütüphanesinin hedef cihaza kopyalanması için installable özelliği
+    installable: true,
+
+    optimize: {
+        enabled: false
+    },
+}

@@ -1,0 +1,12 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := ndkdemonativelib
+LOCAL_SRC_FILES := 	src/main/cpp/src/fibonacci.cpp \
+					src/main/cpp/src/ndkdemonativelib.cpp
+LOCAL_C_INCLUDES := src/main/cpp/inc/fibonacci.h
+LOCAL_LDFLAGS   := -llog
+#LOCAL_CFLAGS    += -Wno-error -I/usr/lib/jvm/java-8-openjdk-amd64/include -I/usr/lib/jvm/java-8-openjdk-amd64/include/linux
+LOCAL_CFLAGS    += -Wno-error -I$(JAVA_HOME)/include -I$(JAVA_HOME)/include/linux
+include $(BUILD_SHARED_LIBRARY)
+
