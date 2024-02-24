@@ -36,7 +36,8 @@ INIT += /system/etc/init/mcdevice.rc
 ######################################################################
 # Add the following Packages
 ######################################################################
-PRODUCT_PACKAGES += mchello
+PRODUCT_PACKAGES += mchello \
+					com.example.ndkdemo
 
 
 
