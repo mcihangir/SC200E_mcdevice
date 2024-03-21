@@ -1,0 +1,24 @@
+diff --git a/QSSI.12/vendor/qcom/proprietary/commonsys-intf/QIIFA-cmd/hidl/qiifa_hidl_cmd_6.json b/QSSI.12/vendor/qcom/proprietary/commonsys-intf/QIIFA-cmd/hidl/qiifa_hidl_cmd_6.json
+index eb6723a..a0612ef 100755
+--- a/QSSI.12/vendor/qcom/proprietary/commonsys-intf/QIIFA-cmd/hidl/qiifa_hidl_cmd_6.json
++++ b/QSSI.12/vendor/qcom/proprietary/commonsys-intf/QIIFA-cmd/hidl/qiifa_hidl_cmd_6.json
+@@ -3696,7 +3696,18 @@
+                     "name": "IQuectelat",
+                     "instance": "default"
+                 }
+-             }
++             },
++			 {
++				 "@format": "hidl",
++				 "@optional": "true",
++				 "name": "vendor.mc.aproximity",
++				 "version": "1.0",
++				 "interface": {
++					 "name": "IAproximity",
++					 "instance": "default"
++				 }
++			  }
++
+         ]
+     }
+ }

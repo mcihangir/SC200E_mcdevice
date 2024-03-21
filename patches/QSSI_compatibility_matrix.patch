@@ -1,0 +1,17 @@
+diff --git a/QSSI.12/hardware/interfaces/compatibility_matrices/compatibility_matrix.6.xml b/QSSI.12/hardware/interfaces/compatibility_matrices/compatibility_matrix.6.xml
+index 6e01b0a..3aa9c12 100644
+--- a/QSSI.12/hardware/interfaces/compatibility_matrices/compatibility_matrix.6.xml
++++ b/QSSI.12/hardware/interfaces/compatibility_matrices/compatibility_matrix.6.xml
+@@ -1,4 +1,12 @@
+ <compatibility-matrix version="1.0" type="framework" level="6">
++	<hal format="hidl" optional="true">
++		<name>vendor.mc.aproximity</name>
++		<version>1.0</version>
++		<interface>
++			<name>IAproximity</name>
++			<instance>default</instance>
++		</interface>
++	</hal>
+     <hal format="hidl" optional="true">
+         <name>android.hardware.quectelat</name>
+         <version>1.0</version>
